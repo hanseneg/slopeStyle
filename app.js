@@ -61,7 +61,7 @@ const combineAnimals = () => {
 
 // new
 const product = (...numbers) => numbers.reduce((acc, number) => acc * number, 1)
-// console.log(product(1,2,3,4,5,6))
+// console.log(product(1,2,3,4,5))
 
 // original
 // function unshift(array, a, b, c, d, e) {  
@@ -69,8 +69,8 @@ const product = (...numbers) => numbers.reduce((acc, number) => acc * number, 1)
 //   }
 
 //  new
-const unshift = (arr, ...array2) => {  
-    return [...arr, ...array2]
+const unshift = (array, ...array2) => {  
+    return [...array, ...array2]
   }
 // console.log(unshift([5,6,7,8], 4))
 
@@ -99,4 +99,4 @@ const populatePeople = (names) => names.map(name => {
             lastName
         }
     })
-// console.log(populatePeople(["Frank Peterson", "Suzy Degual", "Liza Jones"]))
+console.log(populatePeople(["Frank Peterson", "Suzy Degual", "Liza Jones"]))
